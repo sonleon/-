@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="content-type" content = "text/html;charset =utf-8" />
+  <title>一家书店登陆界面</title>
+ <style type = "text/css">
+ /*全局CSSC初始化*/
+ body,ul,ol,li,img,div,span,p,input{margin:0px;padding:0px;border:0px;}
+ ul,li,ol{list-style:none;}
+ body{font-size:12px;}
+ a:link,a:visited{text-decoration:none;}
+ a:hover{color:#f40;}
+ /*顶层容器样式*/
+.topbox{width:1290px;height:88px;margin:0px auto;background:url(images/logo/biaoti.png) no-repeat;}
+/*.top_img{width:350px;}*/
+.topbox_imgbox{margin-top:6px;margin-left:100px;float:left;}
+/*主内容容器样式*/
+.mainbox{/*border:1px solid red;*/width:1349px;height:600px;/*background-color:#56CC8A;*/background:url(images/logo/dushu2.png) no-repeat;}
+.mainbox_loginbox{height:351px;padding:15px 30px ;float:right;margin-top:110px;margin-right:130px;background-color:#eaeaea;}
+.mainbox_input{width:240px;height:18px;padding:11px 8px;}
+.main_input{margin-bottom:20px;}
+.mainbox_headtext{padding:20px 0px;font-size:20px;font-family:微软雅黑;}
+.mainbox_loginbutton{width:296px;height:44px;font-size:15px;font-family:微软雅黑;margin-left:0px;background-color:#ff4400;color:#ffffff;cursor:pointer;}
+.mainbox_bottomtext{float:right;margin-top:30px;}
+.logoimg{width:20px;height:20px;position:relative;left:12px;top:12px;} 
+.mainbox_userlogo{float:left;width:40px;height:40px;background-color:#ffffff;}
+/*底部容器样式*/
+.bottombox{width:1200px;height:172px;color:#000000;/*border:1px solid blue;*/margin:0px auto;font-size:18px;text-align:center;}
+ </style>
+ <script type="text/javascript">
+ function formcheck()
+ {
+	 if(document.userlogin.username.value=="")
+	 {
+		 alert("用户名不能为空！");
+		 return false;
+	 
+	 }
+ }
+ 
+ 
+ 
+ </script>
+ 
+ </head>
+ <body>
+  <div class = "topbox">
+	<!--<div class = "topbox_imgbox"><a href = "购物首页.html"><img src = "images/logo/biaoti2.png" class = "top_img"/></a>--></div>
+  </div>
+  
+  <div class = "mainbox">
+	<div class = "mainbox_loginbox">
+	<form name = "userlogin" method = "post" action = "login.php" onsubmit="return formcheck()">
+		<div class = "mainbox_headtext">用户登陆</div>
+		<div class = "main_input"><div class = "mainbox_userlogo"><img src = "images/logo/user2.png" class = "logoimg"/></div><input type = "text" name = "username" required = "required" placeholder = "请输入用户名" class = "mainbox_input" /></div>
+		<div class = "main_input"><div class = "mainbox_userlogo"><img src = "images/logo/pwd2.png" class = "logoimg"></div><input type = "password" name = "userpwd"  required = "required" placeholder = "请输入密码" class = "mainbox_input"></div>
+		<div class = "mainbox_buttonbox"><input type = "submit" value = "登&nbsp;&nbsp;陆" class = "mainbox_loginbutton"/></div>
+		</form>
+		<div class = "mainbox_bottomtext">
+			<a href = "#">忘记密码</a>&nbsp;
+			<a href = "login.html" >免费注册</a>&nbsp;
+			<a href="bookmain2.html" target="_black">游客访问</a>
+		</div>
+	
+	
+	</div>
+  
+  
+  </div>
+  
+  
+  <div class = "bottombox">
+  
+  &copy;2016 版权所有
+  
+  </div>
+ </body>
+</html>
